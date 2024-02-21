@@ -1,0 +1,24 @@
+<Module>
+    <ModulePrefs title="1v1-old"/>
+    <Content type="html">
+        <![CDATA[ 
+        <html> 
+            <head> 
+                <meta charset="utf-8"> 
+                <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/MoonPro69/Slope-Game@main/TemplateData/style.css"> 
+                <script src="https://cdn.jsdelivr.net/gh/MoonPro69/Slope-Game@main/TemplateData/UnityProgress.js"></script> 
+                <script src="https://cdn.jsdelivr.net/gh/MoonPro69/Slope-Game@main/TemplateData/unityloader41.js"></script> 
+                <script> 
+                    var gameInstance = UnityLoader.instantiate("gameContainer", "https://cdn.jsdelivr.net/gh/MoonPro69/Slope-Game@main/Build/slope.json", {onProgress: UnityProgress,Module:{onRuntimeInitialized: function() {UnityProgress(gameInstance, "complete")}}}); 
+                </script> 
+            </head> 
+            <body> 
+                <div class="webgl-content"> 
+                    <div id="gameContainer" style="width: 100%; height: 100%; margin: auto;"></div> 
+                </div> 
+            </body> 
+        </html> 
+        ]]>
+    </Content>
+</Module>
